@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" type="text/javascript"></script>
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        li{
+            clear: both;
+            margin-top: 20px;
+        }
+        img{
+            width: 80px;
+            float: left;
+            margin-right: 10px;
+        }
+        strong{
+            font-size: 30px;
+        }
+        p{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="repo-form">
+        <input type="text" name="repository">
+        <button type="submit">Adicionar</button>
+    </form>
+    <ul id="repo-list">
+    </ul>
+</body>
+<script src="./bundle.js"></script>
+</html>
